@@ -338,6 +338,29 @@ nav {
     left: 20%;
 }
 
+.section-title2 {
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title2 h2 {
+  font-size: 2.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title2 h2::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background-color: var(--accent-color);
+  bottom: 0;
+  left: 20%;
+}
+
 .services-intro {
     text-align: center;
     max-width: 800px;
@@ -399,15 +422,16 @@ nav {
   align-items: center;
 }
 
-.service-icon i {
-  font-size: 2.5rem;
+.service-icon img {
+  width: 60px;
+  height: 60px;
   margin-bottom: 0.5rem;
-  color: #444;
-  transition: color 0.3s;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
-.service-icon:hover i {
-  color: #ffcc70;
+.service-icon:hover img {
+  filter: none;
 }
 
 .service-icon p {
