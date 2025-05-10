@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Casa Racco ofrece servicios funerarios integrales con atención permanente y cobertura nacional. Profesionales al servicio de las familias, 24hs." />
+  <title>Casa Racco</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1a2d5a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #1f1f1f;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      text-decoration: underline;
+      text-underline-offset: 10px;
+      margin-bottom: 1rem;
+      color: white;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      text-decoration-skip-ink: none;
+    }
+
+    .nationwide {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      margin-top: 4rem;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .nationwide h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .nationwide p {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin: 0;
+      color: #f0f0f0;
+    }
+
+    .testimonials, .differentials, .timeline {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #f9f9f9;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .testimonials h3, .differentials h3, .timeline h3 {
+      font-size: 1.3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .testimonial-card p, .differential-item, .timeline-step {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .testimonial-card span {
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    .faq {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      background: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .faq h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+    }
+
+    .faq-item strong {
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .contact-form {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 2rem;
+      background: #f9f9f9;
+      border-radius: 12px;
+    }
+
+    .contact-form h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    .contact-form button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .certifications {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 4rem;
+    }
+
+    /* Pantalla de carga */
+    #loader {
+      position: fixed;
+      inset: 0;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.6s ease;
+    }
+
+    .loader-ring {
+      width: 40px;
+      height: 40px;
+      border: 3px solid #e6e6e6;
+      border-top-color: var(--primary-color);
+      border-radius: 50%;
+      animation: spin 1.2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { transform: rotate(360deg); opacity: 0.7; }
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-ring"></div>
+  </div>
+
+  <div class="container">
+    <section class="nationwide">
+      <h3>Cobertura Nacional</h3>
+      <p>Brindamos servicios funerarios integrales en todo el territorio nacional, acompañando a las familias con respeto y profesionalismo en cada etapa del proceso.</p>
+    </section>
+
+    <section class="differentials">
+      <h3>¿Por qué elegirnos?</h3>
+      <div class="differential-item">✓ Atención personalizada con asesoramiento humano</div>
+      <div class="differential-item">✓ Cobertura nacional, traslados y repatriación</div>
+      <div class="differential-item">✓ Instalaciones modernas y confortables</div>
+      <div class="differential-item">✓ Ceremonias personalizadas</div>
+      <div class="differential-item">✓ Más de 40 años de experiencia</div>
+    </section>
+
+    <section class="timeline">
+      <h3>¿Cómo es el proceso?</h3>
+      <div class="timeline-step"><strong>Paso 1:</strong> Primer contacto telefónico (24hs).</div>
+      <div class="timeline-step"><strong>Paso 2:</strong> Documentación y asesoramiento.</div>
+      <div class="timeline-step"><strong>Paso 3:</strong> Traslado y preparación.</div>
+      <div class="timeline-step"><strong>Paso 4:</strong> Ceremonia o despedida.</div>
+      <div class="timeline-step"><strong>Paso 5:</strong> Disposición final y seguimiento.</div>
+    </section>
+
+    <section class="testimonials">
+      <h3>Lo que dicen las familias</h3>
+      <div class="testimonial-card">
+        <p>“Gracias por el acompañamiento en un momento tan difícil. Profesionalismo y calidez humana.”</p>
+        <span>- María G.</span>
+      </div>
+      <div class="testimonial-card">
+        <p>“El servicio fue impecable, desde el primer llamado hasta el final. Gracias.”</p>
+        <span>- Jorge L.</span>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h3>Preguntas frecuentes</h3>
+      <div class="faq-item">
+        <strong>¿En qué ciudades ofrecen cobertura?</strong>
+        <p>Contamos con cobertura nacional, incluyendo traslados y servicios personalizados en todo el país.</p>
+      </div>
+      <div class="faq-item">
+        <strong>¿Puedo coordinar todo de forma remota?</strong>
+        <p>Sí. Nuestro equipo brinda asistencia completa por teléfono o WhatsApp para agilizar todo el proceso.</p>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h3>Consulta directa</h3>
+      <form action="mailto:info@casaracco.com" method="post" enctype="text/plain">
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="tel" name="telefono" placeholder="Teléfono" required />
+        <textarea name="consulta" rows="4" placeholder="Escriba su consulta..." required></textarea>
+        <button type="submit">Enviar consulta</button>
+      </form>
+    </section>
+
+    <footer class="certifications">
+      <p>Miembro de la Asociación de Servicios Funerarios Nacionales - Normas ISO 9001 - Calidad Certificada</p>
+    </footer>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => loader.remove(), 600);
+      }, 1000); // 1 segundo
+    });
+  </script>
+</body>
+</html>
