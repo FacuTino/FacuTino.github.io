@@ -679,6 +679,13 @@ nav {
   color: #555;
 }
 
+/* ===== Ajuste solo para la tarjeta 5 ===== */
+.card:nth-child(5) .card-img img {
+  object-fit: cover;
+  object-position: center 99%;
+  transform: scale(1);
+}
+
 /* Botón "Contáctenos ahora" */
 .more-services {
   text-align: center;
