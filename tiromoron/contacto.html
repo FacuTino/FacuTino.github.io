@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Principal -->
+    <title>Contacto | Tiro Olímpico Morón – Club de Tiro en Buenos Aires</title>
+    <meta name="description" content="Contactá al Tiro Olímpico Morón. Dirección: Av. Hipólito Yrigoyen 1151, Morón, Buenos Aires. Consultas sobre cursos de tiro, trámites ANMaC (ex RENAR) y membresías.">
+    <meta name="keywords" content="contacto Tiro Olímpico Morón, club tiro Morón dirección, teléfono polígono Morón, cursos tiro Buenos Aires contacto">
+    <meta name="author" content="Tiro Olímpico Morón">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://www.tiromoron.com.ar/contacto">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tiromoron.com.ar/contacto">
+    <meta property="og:title" content="Contacto | Tiro Olímpico Morón">
+    <meta property="og:description" content="Dirección, teléfono y formulario de contacto del Tiro Olímpico Morón en Buenos Aires.">
+    <meta property="og:image" content="https://www.tiromoron.com.ar/og-contacto.jpg">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="Tiro Olímpico Morón">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto | Tiro Olímpico Morón">
+    <meta name="twitter:description" content="Consultas sobre cursos, trámites ANMaC y membresías en Morón, Buenos Aires.">
+    <meta name="twitter:image" content="https://www.tiromoron.com.ar/og-contacto.jpg">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["SportsClub", "LocalBusiness"],
+      "name": "Tiro Olímpico Morón",
+      "alternateName": "T.O.M.",
+      "url": "https://www.tiromoron.com.ar",
+      "telephone": "+54-11-4629-5000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Hipólito Yrigoyen 1151",
+        "addressLocality": "Morón",
+        "addressRegion": "Buenos Aires",
+        "postalCode": "1708",
+        "addressCountry": "AR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -34.6537,
+        "longitude": -58.6179
+      },
+      "openingHours": "Mo-Sa 09:00-20:00",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "areaServed": "AR",
+        "availableLanguage": "Spanish"
+      },
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
+    }
+    </script>
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-section {
+            padding: var(--spacing-xl) 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+        
+        .contact-info-item {
+            margin-bottom: 2.5rem;
+        }
+        
+        .contact-info-item h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+        }
+        
+        .contact-info-item p {
+            color: var(--color-gray-600);
+            line-height: 1.8;
+        }
+        
+        .contact-form {
+            background-color: var(--color-gray-100);
+            padding: 3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem;
+            border: 1px solid var(--color-gray-200);
+            background-color: var(--color-white);
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            transition: border-color var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-black);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .btn-submit {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--color-black);
+            color: var(--color-white);
+            border: 1px solid var(--color-black);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all var(--transition);
+        }
+        
+        .btn-submit:hover {
+            background-color: transparent;
+            color: var(--color-black);
+        }
+        
+        .map-container {
+            width: 100%;
+            height: 450px;
+            background-color: var(--color-gray-100);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .contact-form {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Menú principal">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand" aria-label="Tiro Olímpico Morón – Inicio">T.O.M.</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Institucional</a>
+                    <ul class="submenu">
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="autoridades.html">Autoridades</a></li>
+                        <li><a href="convenios.html">Convenios</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="#" class="nav-link">Servicios</a>
+                    <ul class="submenu">
+                        <li><a href="cursos.html">Cursos de Iniciación</a></li>
+                        <li><a href="tramites-renar.html">Gestion ante RENAR</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a href="actualidad.html" class="nav-link">Actualidad</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container-narrow">
+            <h1 class="page-title">Contacto</h1>
+            <p class="page-subtitle">Estamos para ayudarte</p>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>Dirección</h3>
+                        <p>Av. Hipólito Yrigoyen 1151<br>Morón, Buenos Aires<br>Argentina (B1708)</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Teléfono</h3>
+                        <p>(011) 4629-5000</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Horarios de Atención</h3>
+                        <p>Martes a Sabado: 10:00 - 19:00 hs</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 1.5rem;">Envíanos tu Consulta</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Seleccione un asunto</option>
+                                <option value="cursos">Gestion ante el RENAR</option>
+                                <option value="inscripcion">Formacion para principiantes</option>
+                                <option value="consulta">Consulta General</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" style="padding-top: 0;">
+        <div class="container">
+            <h2 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 2rem;">Ubicación</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9507429841764!2d-58.62288492346679!3d-34.649789572938305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7f5f7f7f7f7%3A0x0!2sAv.%20Hip%C3%B3lito%20Yrigoyen%201151%2C%20Mor%C3%B3n!5e0!3m2!1ses!2sar!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Ubicación de Tiro Olímpico Morón">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>T.O.M.</h4>
+                    <p>Tiro Olímpico Morón<br>Club de tiro deportivo</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="historia.html">Historia</a></li>
+                        <li><a href="autoridades.html">Autoridades</a></li>
+                        <li><a href="cursos.html">Cursos</a></li>
+                        <li><a href="tramites-renar.html">Trámites RENAR</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p>Av. Hipólito Yrigoyen 1151<br>Morón, Buenos Aires<br>11 4629-5000</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Afiliaciones</h4>
+                    <p>RENAR<br>Federación Argentina de Tiro<br>Federación de Tiro de la Provincia de Buenos Aires</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tiro Olímpico Morón.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
